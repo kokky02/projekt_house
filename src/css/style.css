@@ -1,5 +1,22 @@
+@font-face {
+  font-family: 'Museo Sans Light';
+  src: url("../fonts/MuseoSansCyrl-300.eot");
+  src: url("../fonts/MuseoSansCyrl-300.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSansCyrl-300.woff") format("woff"), url("../fonts/MuseoSansCyrl-300.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Museo Sans Bold';
+  src: url("../fonts/MuseoSansCyrl-700.eot");
+  src: url("../fonts/MuseoSansCyrl-700.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSansCyrl-700.woff") format("woff"), url("../fonts/MuseoSansCyrl-700.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
-  font-family: sans-serif;
+  font-family: 'Museo Sans light', sans-serif;
+  font-weight: 300;
 }
 
 img {
@@ -12,11 +29,19 @@ img {
   margin: auto;
 }
 
+@media (max-width: 640px) {
+  .container {
+    width: 90%;
+  }
+}
+
 .button {
   background-color: #ffd200;
   color: #333;
   border: none;
   border-radius: 10px;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
 }
 
 .header {
@@ -73,6 +98,8 @@ img {
   color: #333;
   display: block;
   text-decoration: none;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
   margin-top: 5px;
 }
 
@@ -115,8 +142,6 @@ img {
 .main-text {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
-  margin: 40px 0 0 0;
-  padding: 0 0 0 0;
 }
 
 @media (max-width: 1200px) {
@@ -130,6 +155,8 @@ img {
   color: #333;
   padding-right: 200px;
   line-height: 55px;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
   margin: 45px 0 20px 0;
 }
 
@@ -159,7 +186,18 @@ img {
   }
 }
 
-.main-text__item {
+.main-list {
+  margin: 40px 0 0 0;
+  padding: 0 0 0 0;
+}
+
+@media (max-width: 640px) {
+  .main-list {
+    margin: 30px 0 0 0;
+  }
+}
+
+.main-list__item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -171,7 +209,13 @@ img {
       flex-basis: 50%;
 }
 
-.main-text__image {
+@media (max-width: 640px) {
+  .main-list__item {
+    margin-bottom: 15px;
+  }
+}
+
+.main-list__image {
   margin-right: 30px;
   width: 40px;
   height: 40px;
@@ -188,16 +232,17 @@ img {
           align-items: center;
 }
 
-.main-text__text {
+.main-list__text {
   font-size: 14px;
   color: #333;
   line-height: 24px;
-  max-width: 250px;
+  max-width: 300px;
 }
 
-@media (max-width: 1200px) {
-  .main-text__text {
-    margin-bottom: 30px;
+@media (max-width: 640px) {
+  .main-list__text {
+    font-size: 12px;
+    max-width: 250px;
   }
 }
 /*# sourceMappingURL=style.css.map */

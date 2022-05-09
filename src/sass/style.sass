@@ -1,8 +1,9 @@
 @import "vars"
+@import "fonts"
 
 
 body 
-    font-family: 'Merriweather', serif
+    +reg 
     
 
 img
@@ -21,6 +22,7 @@ img
     color: $accent
     border: none
     border-radius: 10px
+    +bold 
 
 
     
@@ -50,6 +52,7 @@ img
         color: $accent
         display: block
         text-decoration: none
+        +bold 
         margin-top: 5px
     &__button
         padding: 18px 47px
@@ -77,6 +80,7 @@ img
             color: $accent
             padding-right: 200px
             line-height: 55px
+            +bold 
             margin: 45px 0 20px 0
             @media (max-width: 1200px)
                 padding-right: 10px
