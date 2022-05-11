@@ -1,6 +1,8 @@
 @import "vars"
 @import "fonts"
 
+*
+    box-sizing: border-box
 
 body 
     +reg 
@@ -22,8 +24,18 @@ img
     color: $accent
     border: none
     border-radius: 10px
+    padding: 18px 47px
     +bold 
-
+    &:hover
+        background-color: darken($buttons, 5%)
+        cursor: pointer
+.input
+    border: 1px solid $border-input
+    padding: 25px
+    border-radius: 10px
+    font-size: 15px
+    padding: 20px 25px
+    
 
     
 .header
@@ -54,8 +66,9 @@ img
         text-decoration: none
         +bold 
         margin-top: 5px
+    
     &__button
-        padding: 18px 47px
+        
         margin-left: 30px
         font-size: 13px
 
@@ -105,6 +118,8 @@ img
             align-items: center
             margin-bottom: 20px 
             flex-basis: 50%
+            &:last-child
+                margin-bottom: 0
             @media (max-width: 640px)
                 margin-bottom: 15px
 
@@ -126,6 +141,67 @@ img
                 font-size: 12px
                 max-width: 250px
             
+
+.offer
+    padding: 90px 0
+    background: url('../img/offer-bg.jpg') no-repeat
+    background-position: center right
+    background-size: contain
+    position: relative
+    @media (max-width: 1200px)
+        background-size: cover
+    @media (max-width: 768px)
+        background: #fff
+
+    &:before
+        content: ''
+        width: 50%
+        height: 100%
+        position: absolute
+        background-color: #fff
+        top: 0
+        left: 0
+
+    &-block
+        width: 50%
+        padding-right: 90px
+        position: relative
+        @media (max-width: 768px)
+            width: 100%
+            padding-right: 0
+    &-title
+        font-size: 24px
+        line-height: 35px
+        max-width: 350px
+        margin-bottom: 25px
+        +bold 
+    &-subtitle
+        display: inline-block
+        font-size: 14px
+        max-width: 260px
+        margin-bottom: 30px
+    &__input
+        
+        margin-bottom: 30px
+        width: 240px
+        @media (max-width: 1200px)
+            width: 100%
+            margin-bottom: 15px
+        &:first-child
+            margin-right: 10px
+        
+    &__button
+        width: 100%
+        min-height: 70px
+        @media (max-width: 1200px)
+            font-size: 13px
+        @media (max-width: 768px)
+            font-size: 16px
+        
+        
+
+
+
            
 
 
