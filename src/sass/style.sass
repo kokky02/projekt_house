@@ -315,25 +315,63 @@ img
         margin-bottom: 60px
     &__card
         margin-bottom: 30px
+       
+
+        
 .cards
     display: flex
     flex-wrap: wrap
     justify-content: space-between
+    @media (max-width: 1200px)
+        display: block
+        
     
 .card
     text-align: center
     border: 1px solid $border-card
     transition: .2s
+    @media (max-width: 1200px)
+        margin: auto
+        display: flex
+        width: 75%
+        
+
+        
+    @media (max-width: 1025px)
+        display: block
+        margin: auto
+        width: 75%
+        
+        
+    @media (max-width: 650px)
+        display: block
+        margin: auto
+        
     &:hover
         box-shadow: 0 20px 25px rgba(0, 0, 0, 0.1)
         .card__image::before
             opacity: 1
     &__text
         padding: 40px
+        @media (max-width: 1200px)
+           margin: auto
+           display: block
+           align-items: center 
+        
+            
+
     &__image
         position: relative
         img
             display: block
+            @media (max-width: 1025px)
+                display: block
+                margin: auto
+                align-items: center
+            @media (max-width: 650px)
+                display: block
+                margin: auto
+                align-items: center
         &::before
             content: ''
             position: absolute
@@ -350,6 +388,8 @@ img
         font-size: 18px
         color: #000
         margin-bottom: 30px
+      
+
     &__link
         display: inline-block
         +bold 
@@ -359,6 +399,8 @@ img
         &:hover
             &::after
                 height: 13px
+       
+            
                                
         &::after
             content: ''

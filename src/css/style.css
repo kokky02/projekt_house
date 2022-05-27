@@ -537,11 +537,42 @@ img {
           justify-content: space-between;
 }
 
+@media (max-width: 1200px) {
+  .cards {
+    display: block;
+  }
+}
+
 .card {
   text-align: center;
   border: 1px solid #e8e8e8;
   -webkit-transition: .2s;
   transition: .2s;
+}
+
+@media (max-width: 1200px) {
+  .card {
+    margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 75%;
+  }
+}
+
+@media (max-width: 1025px) {
+  .card {
+    display: block;
+    margin: auto;
+    width: 75%;
+  }
+}
+
+@media (max-width: 650px) {
+  .card {
+    display: block;
+    margin: auto;
+  }
 }
 
 .card:hover {
@@ -557,12 +588,42 @@ img {
   padding: 40px;
 }
 
+@media (max-width: 1200px) {
+  .card__text {
+    margin: auto;
+    display: block;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 .card__image {
   position: relative;
 }
 
 .card__image img {
   display: block;
+}
+
+@media (max-width: 1025px) {
+  .card__image img {
+    display: block;
+    margin: auto;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media (max-width: 650px) {
+  .card__image img {
+    display: block;
+    margin: auto;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .card__image::before {
