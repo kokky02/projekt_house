@@ -13,6 +13,10 @@
 
 
 $(document).ready(function(){
+
+    //napojení knihovny wow.js
+    new WOW().init();
+
     var button = $('#button');
     var modal = $('#modal');
     var close = $('#close');
