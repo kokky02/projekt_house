@@ -29,6 +29,8 @@ $(document).ready(function(){
         modal.removeClass('modal_active')
         
     }); 
+
+    //Napojení slideru
     $('.slider').slick({
         infinite: true,
         slidesToShow: 3,
