@@ -418,11 +418,21 @@ img
     padding-bottom: 120px
     &__title
         margin-bottom: 60px
+        @media (max-width: 1024px)
+            margin-bottom: 20px
+            
     &__subtitle
         margin-bottom: 75px
+        @media (max-width: 1024px)
+            margin-bottom: 45px
+        
+
 .icons
     display: flex
     justify-content: space-between
+    @media (max-width: 1024px)
+        display: block
+
 
 .icon
     text-align: center
@@ -439,6 +449,8 @@ img
         width: 75px
         height: 25px
         background-image: url('../img/arrow1.jpg')
+        @media (max-width: 1024px)
+            display: none
        
     &__image
         width: 100px
@@ -451,6 +463,7 @@ img
         justify-content: center
         align-items: center
         margin-bottom: 30px
+        
 
         img
             width: 30px
@@ -461,5 +474,15 @@ img
         display: inline-block
         font-size: 14px
 
+.notice
+    background-color: $second
+    padding: 100px 0
+    &__text
+        text-align: center
+        font-size: 32px
+        max-width: 750px
+        margin: auto
+        line-height: 50px
+        font-weight: 300
 
 

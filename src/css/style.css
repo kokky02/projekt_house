@@ -682,8 +682,20 @@ img {
   margin-bottom: 60px;
 }
 
+@media (max-width: 1024px) {
+  .steps__title {
+    margin-bottom: 20px;
+  }
+}
+
 .steps__subtitle {
   margin-bottom: 75px;
+}
+
+@media (max-width: 1024px) {
+  .steps__subtitle {
+    margin-bottom: 45px;
+  }
 }
 
 .icons {
@@ -693,6 +705,12 @@ img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+@media (max-width: 1024px) {
+  .icons {
+    display: block;
+  }
 }
 
 .icon {
@@ -713,6 +731,12 @@ img {
   width: 75px;
   height: 25px;
   background-image: url("../img/arrow1.jpg");
+}
+
+@media (max-width: 1024px) {
+  .icon::after {
+    display: none;
+  }
 }
 
 .icon__image {
@@ -744,5 +768,19 @@ img {
   max-width: 140px;
   display: inline-block;
   font-size: 14px;
+}
+
+.notice {
+  background-color: #ffc000;
+  padding: 100px 0;
+}
+
+.notice__text {
+  text-align: center;
+  font-size: 32px;
+  max-width: 750px;
+  margin: auto;
+  line-height: 50px;
+  font-weight: 300;
 }
 /*# sourceMappingURL=style.css.map */
