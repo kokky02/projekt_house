@@ -477,6 +477,8 @@ img
 .notice
     background-color: $second
     padding: 100px 0
+    
+        
     &__text
         text-align: center
         font-size: 32px
@@ -495,6 +497,10 @@ img
 .benefits
     display: flex
     justify-content: space-between
+    @media (max-width: 1290px)
+            display: block
+            justify-content: space-between
+            align-items: center
 
 .benefit
     background-color: $benefit-bg
@@ -504,6 +510,14 @@ img
     justify-content: space-between
     max-width: 370px
     position: relative
+    text-align: center
+    @media (max-width: 1290px)
+        display: block
+        align-items: center
+        margin: auto
+
+
+    
    
     &__image
         position: absolute
@@ -511,20 +525,43 @@ img
         left: 0
         width: 370px
         height: 250px
+        
+       
     &__text
-        margin: 26px 80px 0 26px
+        margin: 50px 34px 0 32px
         font-size: 16px
         line-height: 23px
         strong
             +bold
+        @media (max-width: 1290px)
+            margin: 12%
+            display: inline-block
+            text-align: center
+            align-items: center
+            justify-content: center
+
+            
 
 
 .documents__title
     margin-bottom: 100px
+    @media (max-width: 1290px)
+        display: block
+        align-items: center
+        margin: auto
+        justify-content: space-between
 
 .documents-block
     display: flex
     justify-content: space-between
+    @media (max-width: 1290px)
+        display: inline-block
+        text-align: center
+        align-items: center
+        justify-content: center
+        margin-left: 29%
+        margin-top: 40px
+
     &__text
         text-align: center
         margin-top: 40px
@@ -534,7 +571,12 @@ img
     &__image
         height: 250px
         width: 370px
+        @media (max-width: 1290px)
+            margin-top: 61px
+            margin-bottom: -26px
        
+
+    //    dodělat responzivitu na mobil
 
 
 
