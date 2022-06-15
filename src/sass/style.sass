@@ -576,7 +576,49 @@ img
             margin-bottom: -26px
        
 
-    //    dodělat responzivitu na mobil
+.brief
+    &-block
+        display: flex
+    &__interview
+        flex-basis: 50%
+    &__form
+        flex-basis: 50%
+
+.interview
+    padding-right: 79px
+    &__title
+        +bold 
+        font-size: 22px
+        line-height: 33px
+        margin-bottom: 50px
+    &__subtitle
+        sz: 16px
+        margin-bottom: 100px
+        display: block
+    &-list
+        list-style-type: none
+        padding: 0
+        &__item
+            display: flex
+            align-items: center
+            margin-bottom: 25px
+            +bold 
+            
+
+        &__counter
+            width: 35px
+            height: 35px
+            border: 2px solid $text-color
+            display: inline-block
+            text-align: center
+            line-height: 35px
+            border-radius: 50px
+            margin-right: 30px
+            font-size: 14px
+        &__text
+            max-width: 400px
+            font-size: 18px
+
 
 
 
