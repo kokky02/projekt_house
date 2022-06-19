@@ -340,12 +340,16 @@
                     <div class="form brief__form">
                         <h3 class="form__title">Zanechte poptávku na bezplantý výpočet <br> renovace po telefonu</h3>
                         <span class="form__subtitle">Vyplňte níže uvedený formulář</span>
-                        <form action="#" class="form">
-                            <input type="text" class="input brief__input" placeholder="Vaše jméno">
-                            <input type="text" class="input brief__input" placeholder="Váš telefon">
+                        <form action="#" class="form" id="brief-form">
+                            <input type="text" name="username" class="input brief__input" placeholder="Vaše jméno">
+                            <input type="text" name="phone" class="input brief__input" placeholder="Váš telefon">
+                            <input type="email" name="email" class="input brief__input" placeholder="Váš email">
                             <button class="button brief__button">Vypočítat náklady</button>
                             <span class="form__description">Zavoláme Vám nazpět do 60 sekund</span>
                         </form>
+                        <!-- required ve formuoláři input znamená, že formulář je nutný k vyplnění 
+                            minlength="xy" kolik minimálně znaků musí být vyplněno (xy je počet který udám)
+                            maxlength="xy" to samé, ale maximální počet-->
                     </div>
                 </div>
             </div>
@@ -362,6 +366,7 @@
      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
      <script src="js/slick.min.js"></script>
      <script src="js/wow.min.js"></script>
+     <script src="js/jquery.validate.min.js"></script>
     <script src="Js/main.js"></script>
 </body>
 </html>
