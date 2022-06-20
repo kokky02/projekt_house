@@ -699,6 +699,57 @@ img
 .error 
     border: 2px solid red
 
+.footer
+    position: relative
+
+.map
+    width: 50%
+    position: absolute
+    left: 0
+    top: 0
+
+
+.contacts
+    flex-basis: 50%
+    padding-top: 100px
+    padding-left: 200px
+
+    &-block
+        display: flex
+        justify-content: flex-end
+    &__title
+        +bold 
+        font-size: 22px
+        line-height: 34px
+    &-list
+        padding: 0
+        list-style-type: none
+        &__icon
+            width: 20px
+            height: 20px
+            text-align: center
+            line-height: 20px
+            margin-right: 20px
+
+        &__item
+            display: flex
+            align-items: flex-start
+            margin-bottom: 40px
+            strong
+                +bold 
+
+        &__text
+            line-height: 1.4
+            a
+                color: $text-color
+                text-decoration: none
+                &:hover
+                    text-decoration: underline
+                    
+// udělat responzivitu na mobil
+
+
+
 
 
 
